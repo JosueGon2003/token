@@ -1,0 +1,27 @@
+<body>
+    <div class="background-container"></div>
+    <div class="container">
+      <img src="https://cdn-icons-png.flaticon.com/512/5509/5509636.png" alt="Login Icon" class="login-icon">
+      <h2 class="login-title">Login de usuario</h2>
+      <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="text" class="form-control" formControlName="email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" formControlName="password" required>
+        </div>
+        <button type="submit" class="btn btn-submit">Iniciar sesion</button>
+      </form>
+      <button class="btn btn-google" (click)="onClick()">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/871/371/original/google-search-icon-google-product-illustration-free-png.png" alt="Google Icon" class="google-icon">
+        Iniciar sesión con Google
+      </button>
+      <br>
+      <button class="btn btn-submit" (click)="onRegister()">Registrar</button>
+      <div *ngIf="isLoggedIn" class="alert alert-success mt-3">
+        ¡Has iniciado sesión exitosamente!
+      </div>
+    </div>
+  </body>

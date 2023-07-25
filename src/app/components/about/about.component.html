@@ -1,0 +1,30 @@
+<div class="logout-btn">
+  <button (click)="onClick()" class="btn btn-danger">Cerrar sesión</button>
+</div>
+<h2>¿Cómo se implementa la autenticación basada en tokens?</h2>
+      <ol>
+        <li>Solicitud: Un usuario introduce sus credenciales de acceso</li>
+        <li>Verificación: El servidor verifica las credenciales del usuario</li>
+        <li>Envío de tokens: El servidor genera un token que será válido durante un período determinado</li>
+        <li>Almacenamiento: El token es almacenado por el navegador web del usuario para su uso futuro</li>
+        <li>Caducidad: El token permanece activo durante un período determinado</li>
+      </ol>
+
+      <h2>¿Cuándo se recomienda la autenticación basada en tokens?</h2>
+      <p>Hay varios casos en los que la autenticación basada en tokens es recomendada:</p>
+      <ul>
+        <li>Sistemas/recursos que frecuentemente conceden acceso temporal</li>
+        <li>Sistemas y recursos que requieren un control de acceso granular</li>
+        <li>Sistemas y recursos que corren un alto riesgo de ser hackeados o comprometidos</li>
+        <li>Sistemas y recursos altamente regulados</li>
+      </ul>
+
+      <h2>Mejores prácticas para la autenticación de alta seguridad basada en tokens</h2>
+      <ul>
+        <li>El token debe ser confidencial</li>
+        <li>Simplificar la carga útil de los tokens</li>
+        <li>Definir la caducidad de los tokens y activar la revocación de los mismos</li>
+        <li>Utilice siempre conexiones HTTPS</li>
+        <li>Considerar la posibilidad de una o varias capas adicionales o de seguridad</li>
+      </ul>
+
